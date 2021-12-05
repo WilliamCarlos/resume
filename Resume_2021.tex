@@ -1,0 +1,103 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{url}
+\usepackage{hyperref}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{W\MakeLowercase{illiam} Y. L\MakeLowercase{ee}} % Your name
+%\address{500 College Ave, Swarthmore, PA} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{\url{cs.swarthmore.edu/~wlee1} \\ williamylee@google.com \\ \url{linkedin.com/in/williamylee}} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+	{ \textbf{Swarthmore College} (B.A., Computer Science)} \hfill {\em Class of 2020} \\
+	\null \hfill {\em GPA: 3.87, Phi Beta Kappa}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Work Experience}
+	{
+		\begin{rSubsection}{Behavior Prediction,  Waymo}{\em August 2020 - Present}{}{}
+			--- Machine learning for behavior prediction at Waymo (formerly Google's self-driving car project). \\
+			--- Advance the state of the art of machine learning and deep learning to predict the future behavior of other vehicles, cyclists, and pedestrians on the road. \\
+			--- Led the transition to the next-generation behavior prediction tech stack on Waymo's trucks.
+		\end{rSubsection}
+	}
+\end{rSection}  % End Work Experience.
+\begin{rSection}{Internship Experience}
+	{
+		\begin{rSubsection}{Behavior Prediction,  Waymo}{\em Summer 2019}{}{}
+			% --- Spent a summer developing machine learning models for the Waymo driver (formerly Google's self-driving car project). \\
+			--- Developed machine learning models for the Waymo driver (formerly Google's self-driving car project) on the behavior prediction team. \\
+			--- Internship featured on \href{https://blog.waymo.com/2019/12/from-hosted-to-host-internship.html}{\underline{Waymo's public blog}}.
+		\end{rSubsection}
+	}
+	{
+		\begin{rSubsection}{Search Relevance, Salesforce}{\em Summer 2018}{}{}
+			--- Redesigned the search metrics pipeline for Salesforce Search using Splunk and Hadoop. \\
+			--- Data analysis on terabyte-scale logs to develop high quality metrics measuring Salesforce Search's performance.
+			% --- Performed data analysis on terabyte-scale logs and developed high quality metrics measuring Salesforce Search's performance.
+		\end{rSubsection}
+	}
+	{
+		\begin{rSubsection}{Laboratory for Advanced Sensing, NASA Ames}{\em Summers 2016 and Summer 2017}{}{}
+			--- Designed and implemented a computer vision alignment pipeline to fully georectify 4k drone footage onto NASA satellite imagery. \\
+			--- Implemented a sliding window CNN using Keras to classify coral reef morphology. \\
+			--- Developed a entropy-based adaptive gaussian blur module for NASA's stereogammetry suite.
+		\end{rSubsection}
+	}
+
+\end{rSection}  % End Work Experience.
+
+\begin{rSection}{Academic Experience}
+	{\textbf{St. Anne's College, University of Oxford} Visiting student at the University of Oxford for the 2018--2019 academic year in the mathematics and computer science departments. Includes graduate level coursework in Advanced Machine Learning and Randomized Algorithms.}
+
+	{\textbf{Research Assistant, Biomedical Machine Learning Lab} Research assistant working with Professor Ameet Soni on weakly supervised learning. Established baselines (class activation maps), conducted literature review, and implemented state-of-the-art techniques in weakly supervised object localization. Finetuned models to the CheXpert Chext X-ray prediction task.}
+\end{rSection}  % End Academic Experience.
+
+\begin{rSection}{Coursework}  %  Begin Coursework.
+	{
+		\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+			University of Oxford \ & Advanced Machine Learning, Probability \& Computing, \\ \ & Probability, Artificial Intelligence, Statistics \\
+
+			Swarthmore College \ & Machine Learning, Computer Vision, Bioinformatics \\
+		\end{tabular}
+	}
+\end{rSection}  % End Coursework.
+
+\begin{rSection}{Skills}
+	{Python, PyTorch/TensorFlow, C++, Java, OpenCV, SciPy, Hadoop/Splunk, Linux, SQL}
+\end{rSection}  % End Skills.
+
+\end{document}
